@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee's Fitness</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /*css reset*/
+        body {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background: url('img/7.jpg');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+
+        }
+
+        .left {
+
+            /*border: 2px solid yellowgreen;*/
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 18px;
+
+        }
+
+        .left img {
+            width: 64px;
+            filter: invert(100%);
+            padding-left: 3px;
+
+        }
+
+        .font {
+            font-size: 17px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 0px;
+
+
+
+
+
+        }
+
+        .mid {
+
+            display: block;
+            width: 35%;
+            margin: 18px auto;
+            /*border: 3 px solid rgb(38, 167, 172);*/
+            font-size: 15px;
+
+
+        }
+
+        .right {
+            /*border: 3px solid rgb(255, 255, 255);
+border: 2px solid red;*/
+            display: inline-block;
+            position: absolute;
+            right: 23px;
+            top: 24px;
+            font-size: 10px;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+
+        }
+
+        .navbar li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        .navbar li a:hover {
+
+            color: pink;
+        }
+
+        .right .btn {
+            margin: 3px 4px;
+            background-color: black;
+            color: white;
+            border: 0px solid gray;
+            border-radius: 7px;
+            font-size: 15px;
+            cursor: pointer;
+            padding: -13px;
+            font-family: 'Times New Roman', Times, serif;
+
+
+        }
+
+        .btn:hover {
+            color: pink;
+        }
+
+        .container {
+            border: 3px solid white;
+            border-radius: 9px;
+            margin: 130px 140px;
+            padding: 12px;
+            width: 30%;
+            display: block;
+            text-align: center;
+        }
+
+        .container .btn1 {
+            margin: 16px auto;
+            display: block;
+            width: 161px;
+            border: 3px solid rgb(184, 180, 180);
+            border-radius: 9px;
+            padding: 3px;
+            box-shadow: 3px;
+            background-color: pink;
+            font-family: 'Times New Roman', Times, serif;
+
+
+
+
+        }
+
+
+
+
+        .form-group input {
+            display: block;
+            width: 151px;
+            margin: 0px auto;
+            font-weight: 100;
+            font-size: 13px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            text-align: center;
+            border: 1px solid gray;
+            border-radius: 3px;
+        }
+
+        .form-group .h2 {
+
+            display: block;
+            width: 45%;
+            margin: 20px auto;
+            font-size: 7px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header class="header">
+
+        <!-- left div for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="error loading image" alt="Bee's Fitness">
+            <div class="font">Bee's Fitness</div>
+        </div>
+        <!-- mid div for navigation menu -->
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Fitness tips</a></li>
+                    <li><a href="https://www.tiktok.com/bimla_gadtaula/" target=_blank>Contact us</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <!--  right div for call to action -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Gmail</button>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h2>One of the Best Fitness site in Nepal</h2>
+        <form action="backend.php" method="post">
+            <section class="form-group">
+                <label for="name" class="name">
+                    Name:<input type="text" name="name" id="name" placeholder="Enter your Name">
+                </label>
+                <br>
+                <label for="Age" class="name">
+                    Age:&nbsp &nbsp<input type="text" name="name" id="Age" placeholder="Enter your Age">
+                </label><br>
+                <label for="Address" class="name">
+                    Gmail:<input type="email" name="name" id="Address" placeholder="Enter your email address">
+                </label>
+                <br>
+                <button class="btn1">Submit</button>
+            </section>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
